@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/THCDC/static/css/main.4c186904.css",
+    "main.js": "/THCDC/static/js/main.b3bf40e1.js",
+    "index.html": "/THCDC/index.html",
+    "main.4c186904.css.map": "/THCDC/static/css/main.4c186904.css.map",
+    "main.b3bf40e1.js.map": "/THCDC/static/js/main.b3bf40e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c186904.css",
+    "static/js/main.b3bf40e1.js"
+  ]
+}
