@@ -8,6 +8,7 @@ import Art from "./components/Art";
 import ArtSupplies from "./components/ArtSupplies";
 import TrinketsSwag from "./components/TrinketsSwag";
 import Suggestions from "./components/Suggestions";
+import QuizPage from "./components/QuizPage";
 
 const App = () => {
   return (
