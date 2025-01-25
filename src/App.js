@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import FirstScreen from "./components/FirstScreen";
+import SecondScreen from "./components/SecondScreen";
+import THCProducts from "./components/THCProducts";
+import Art from "./components/Art";
+import ArtSupplies from "./components/ArtSupplies";
+import TrinketsSwag from "./components/TrinketsSwag";
+import Suggestions from "./components/Suggestions";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App container">
+      <header className="App-header row">
+        <div className="col-12">
+          <Router>
+            <Header />
+            <Routes>
+              <Route path="/" element={<FirstScreen />} />
+              <Route path="/second" element={<SecondScreen />} />
+              <Route path="/thc-products" element={<THCProducts />} />
+              <Route path="/art" element={<Art />} />
+              <Route path="/art-supplies" element={<ArtSupplies />} />
+              <Route path="/trinkets-swag" element={<TrinketsSwag />} />
+              <Route path="/suggestions" element={<Suggestions />} />
+            </Routes>
+          </Router>
+        </div>
       </header>
     </div>
   );
-}
+};
 
 export default App;
