@@ -1,11 +1,15 @@
 import React from "react";
+import QuizPage from "./QuizPage";
 
-const TrinketsSwag = () => {
-  return (
-    <div className="container">
-      <h2>Trinkets and Swag</h2>
-    </div>
-  );
-};
+class TrinketsSwag extends QuizPage {
+  render() {
+    return (
+      <div>
+        {super.render()}
+        <p>This is the Trinkets / Swag page.</p>
+      </div>
+    );
+  }
+}
 
 export default TrinketsSwag;

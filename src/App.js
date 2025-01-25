@@ -11,9 +11,9 @@ import Suggestions from "./components/Suggestions";
 
 const App = () => {
   return (
-    <div className="App container">
-      <header className="App-header row">
-        <div className="col-12">
+    <div className="App container h-100">
+      <header className="App-header row h-100">
+        <div className="col-12 my-auto">
           <Router>
             <Header />
             <Routes>

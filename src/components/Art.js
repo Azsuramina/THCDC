@@ -1,11 +1,15 @@
 import React from "react";
+import QuizPage from "./QuizPage";
 
-const Art = () => {
-  return (
-    <div className="container">
-      <h2>Art Selection</h2>
-    </div>
-  );
-};
+class Art extends QuizPage {
+  render() {
+    return (
+      <div>
+        {super.render()}
+        <p>This is the Art page.</p>
+      </div>
+    );
+  }
+}
 
 export default Art;
